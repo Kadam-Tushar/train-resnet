@@ -1,0 +1,3 @@
+# for miniImagenet 
+
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset miniImagenet --exp-dir ./mini-imagenet/experiment/ --data-dir ./mini-imagenet/data/ --num-class 100 --dist-url 'tcp://localhost:12322' --multiprocessing-distributed --cuda_VISIBLE_DEVICES '0' --world-size 1 --rank 0 --seed 123 --arch resnet18 --workers 0 --lr 0.03 --wd 1e-4 --cosine --epochs 50 --batch-size 64
